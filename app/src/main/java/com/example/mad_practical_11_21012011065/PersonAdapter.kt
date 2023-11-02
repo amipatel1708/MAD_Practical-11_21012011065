@@ -11,10 +11,10 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class PersonAdapter(val context: Context,val Personarray : ArrayList<Person>): RecyclerView.Adapter<PersonAdapter.PersonViewHolder>() {
-   inner class PersonViewHolder (val view: View):RecyclerView.ViewHolder(view)
+    inner class PersonViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
-        val view=LayoutInflater.from(context).inflate(R.layout.person_item,parent,false)
+        val view = LayoutInflater.from(context).inflate(R.layout.person_item, parent, false)
         return PersonViewHolder(view)
     }
 
@@ -23,12 +23,14 @@ class PersonAdapter(val context: Context,val Personarray : ArrayList<Person>): R
     }
 
     override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
-        val view=holder.view
-        view.findViewById<TextView>(R.id.name_textView).text=Personarray[position].name
-        view.findViewById<TextView>(R.id.number_textView).text=Personarray[position].phoneNo
-        view.findViewById<TextView>(R.id.email_textView).text=Personarray[position].emailId
-        view.findViewById<TextView>(R.id.address_textView).text=Personarray[position].address
+        val view = holder.view
+        view.findViewById<TextView>(R.id.name).text = Personarray[position].name
+        view.findViewById<TextView>(R.id.mobile).text = Personarray[position].phoneNo
+        view.findViewById<TextView>(R.id.emailid).text = Personarray[position].emailId
+        view.findViewById<TextView>(R.id.address).text = Personarray[position].address
         view.findViewById<MaterialButton>(R.id.location_btn).setOnClickListener {
-            Intent(context,MapsActivity::class.java).putExtra("Object",Personarray[position]).apply { context.startActivity(this) }
+            Intent(context, MapsActivity::class.java).putExtra("Object", Personarray[position])
+                .apply { context.startActivity(this) }
+        }
     }
 }
