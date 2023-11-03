@@ -17,21 +17,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/person_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="14dp"
-                style="?attr/materialIconButtonFilledStyle"
-                android:backgroundTint="@color/cardview_dark_background"
-                android:drawableTint="@color/white"
-                app:icon="@drawable/baseline_person_24"
-                app:iconGravity="textStart"
-                app:iconSize="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/baseline_person_24"
+                android:background="@drawable/round_shape"/>
 
 
             <LinearLayout
@@ -74,36 +67,26 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/location_btn"
-                    style="?materialIconButtonFilledStyle"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginTop="6dp"
-                    android:backgroundTint="#0000ff"
-                    android:drawableTint="@color/white"
-                    app:icon="@drawable/baseline_location_on_24"
-                    app:iconGravity="textStart"
-                    app:iconSize="30dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/btnLocation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/blue_round_shape"
+                    android:src="@drawable/baseline_location_on_24"/>
 
-                <com.google.android.material.button.MaterialButton
+                <ImageView
                     android:id="@+id/btnDelete"
-                    style="?materialIconButtonFilledStyle"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="#970E3C"
-                    android:drawableTint="@color/white"
-                    app:icon="@drawable/baseline_delete_24"
-                    app:iconGravity="textStart"
-                    app:iconSize="30dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/red_round_shape"
+                    android:src="@drawable/baseline_delete_24"/>
 
             </LinearLayout>
 
