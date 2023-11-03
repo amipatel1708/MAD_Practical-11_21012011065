@@ -2,24 +2,22 @@ package com.example.mad_practical_11_21012011065
 
 class PersonTable {
     companion object{
-        val TABLE_NAME = "PERSON"
-        val COLUMN_ID="id"
-        val COLUMN_PERSON_NAME="person_name"
-        val COLUMN_PERSON_EMAIL_ID="person_email_id"
-        val COLUMN_PERSON_PHONE_NO="person_phone_no"
-        val COLUMN_PERSON_ADDRESS="person_address"
-        val COLUMN_PERSON_GPS_LAT="person_gps_lat"
-        val COLUMN_PERSON_GPS_LONG="person_gps_long"
+        val TABLE_NAME= "Person"
+        val COLUMN_ID ="Id"
+        val COLUMN_NAME = "Name"
+        val COLUMN_PHONE = "PhoneNo"
+        val COLUMN_EMAIL = "Email"
+        val COLUMN_ADDRESS = "Address"
+        val COLUMN_GPS_LAT = "Latitude"
+        val COLUMN_GPS_LONG = "Longitude"
 
-        val CREATE_TABLE = ("CREATE TABLE" + TABLE_NAME + "("
-                + COLUMN_ID + "TEXT PRIMARY KEY,"
-                + COLUMN_PERSON_NAME + "TEXT,"
-                +COLUMN_PERSON_EMAIL_ID+ "TEXT"
-                + COLUMN_PERSON_PHONE_NO + "TEXT"
-                + COLUMN_PERSON_ADDRESS+ "TEXT"
-                + COLUMN_PERSON_GPS_LAT + "REAL"
-                + COLUMN_PERSON_GPS_LONG +"REAL"
-                )
-
+        val CREATE_TABLE = ("CREATE TABLE " + TABLE_NAME + "(" +
+                COLUMN_ID + " TEXT PRIMARY KEY," +
+                COLUMN_NAME + " TEXT," +
+                COLUMN_PHONE + " TEXT," +
+                COLUMN_EMAIL + " TEXT," +
+                COLUMN_ADDRESS + " TEXT," +
+                COLUMN_GPS_LAT + " REAL," +
+                COLUMN_GPS_LONG + " REAL" + ")")
     }
 }

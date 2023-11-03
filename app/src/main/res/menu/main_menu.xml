@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="windows" android:id="@+id/windows_btn" android:icon="@drawable/baseline_window_24" app:showAsAction="ifRoom"/>
+    <item android:title="renew" android:id="@+id/renew" android:icon="@drawable/baseline_autorenew_24" app:showAsAction="ifRoom"/>
 
-    <item
-        android:id="@+id/action_button1"
-        android:title="Button 1"
-        app:showAsAction="always"
-        android:icon="@drawable/baseline_window_24" />
-
-    <item
-        android:id="@+id/action_button2"
-        android:title="Button 2"
-        app:showAsAction="always"
-        android:icon="@drawable/baseline_autorenew_24" />
 </menu>
